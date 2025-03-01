@@ -15,3 +15,7 @@ for y in [doc_sen,doc_para]:
     for x in y:
         print(x)
     print("=====================================================================\n\n\n")
+for m in [nlp,doc_sen,x]:
+    print(type(m))
+
+    
