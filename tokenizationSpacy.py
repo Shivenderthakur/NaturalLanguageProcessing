@@ -3,8 +3,7 @@ import spacy
 
 import nltk
 data = """
-Dr. Pappu
-This is an example sentence.
+
 Tokenization breaks text into smaller parts.
 How many words are in this sentence?
 Tokenizing text helps in natural language processing tasks.
