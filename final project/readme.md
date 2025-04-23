@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A college-level project demonstrating end-to-end fake news detection using classical and deep learning models. It downloads and preprocesses a public “Fake vs Real News” dataset, explores basic statistics, trains multiple classifiers (Logistic Regression, SVM, Random Forest, MLP), and saves the trained models for inference.
+A college-level project demonstrating end-to-end fake news detection using classical machine learning models. It downloads and preprocesses a public “Fake vs Real News” dataset, explores basic statistics, trains multiple classifiers (Logistic Regression, SVM, Random Forest, MLP), and saves the trained models for inference.
 
 ---
 
