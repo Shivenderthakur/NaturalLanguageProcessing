@@ -6,32 +6,7 @@ A college-level project demonstrating end-to-end fake news detection using class
 
 ---
 
-## 🗂️ Repository Structure
 
-```
-.
-├── data/                                # Raw & processed data files
-│   ├── fake.csv
-│   └── real.csv
-│
-├── models/                              # Saved model artifacts
-│   ├── title_vectorizer.pkl
-│   ├── logistic_model.pkl
-│   ├── svm_model.pkl
-│   └── rf_model.pkl
-│
-├── notebooks/
-│   └── preprocessing_and_training_fake_news.ipynb  
-│
-├── scripts/
-│   └── ts.py                            # Downloads NLTK corpora on first run
-│
-├── requirements.txt                     # Python dependencies
-├── .gitignore
-└── README.md                            # This file
-```
-
----
 
 ## 🚀 Getting Started
 
@@ -45,15 +20,16 @@ cd fake-news-detection
 ### 2. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r numpy pandas scikit-learn streamlit nltk 
 ```
 
 ### 3. Download NLTK data
 
 On first run, execute the helper script to download all NLTK corpora:
 
-```bash
-python scripts/ts.py
+```
+import nltk
+nltk.download("all")
 ```
 
 ### 4. Fetch the Dataset
@@ -132,11 +108,11 @@ path = kagglehub.dataset_download("clmentbisaillon/fake-and-real-news-dataset")
 import joblib
 
 # Load artifacts
-vectorizer = joblib.load("models/title_vectorizer.pkl")
-svm_model   = joblib.load("models/svm_model.pkl")
-rf_model    = joblib.load("models/rf_model.pkl")
-mlp_model   = joblib.load("models/mlp_model.pkl")
-log_model   = joblib.load("models/logistic_model.pkl")
+vectorizer = joblib.load("title_vectorizer.pkl")
+svm_model   = joblib.load("svm_model.pkl")
+rf_model    = joblib.load("rf_model.pkl")
+mlp_model   = joblib.load("mlp_model.pkl")
+log_model   = joblib.load("logistic_model.pkl")
 
 # Example single prediction
 headline = "New breakthrough in renewable energy technology"
@@ -239,22 +215,6 @@ Logistic Regression Prediction: Fake
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository.  
-2. Create a feature branch:  
-   ```bash
-   git checkout -b feature/YourFeature
-   ```  
-3. Commit your changes:  
-   ```bash
-   git.commit -m "Add MyFeature"
-   ```  
-4. Open a Pull Request against `main`.
-
----
 
 ## 📜 License
 
@@ -264,6 +224,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## ✉️ Contact
 
-**Your Name**  
-Department of Computer Science, College of Engineering  
-✉️ your.email@university.edu  
+**SHIVENDER SINGH THAKUR**  
+Department of Computer Science, M.B.M University
+✉️ shivthakur4512@gmail.com
