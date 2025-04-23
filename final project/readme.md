@@ -13,7 +13,7 @@ A college-level project demonstrating end-to-end fake news detection using class
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/<your-username>/fake-news-detection.git
+git clone https://github.com/Shivenderthakur/NaturalLanguageProcessing.git
 cd fake-news-detection
 ```
 
